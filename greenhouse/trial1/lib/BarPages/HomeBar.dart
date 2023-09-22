@@ -3,6 +3,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:trial1/BarPages/LightPage/LightPage.dart';
+import 'package:trial1/BarPages/TempPage/TempPage.dart';
+import 'package:trial1/BarPages/WaterPage/WaterPage.dart';
 
 import '../firebase/fireBringer.dart';
 
@@ -114,8 +116,8 @@ class _HomeBarState extends State<HomeBar> {
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children:const <Widget>[
-                            Padding(
+                          children: <Widget>[
+                            const Padding(
                               padding: EdgeInsets.only(bottom: 2.0),
                               child: Text("Hasat durumu",
                                 style: TextStyle(
@@ -126,8 +128,25 @@ class _HomeBarState extends State<HomeBar> {
                             ),
                             Padding(
                               padding: EdgeInsets.only(top: 2.0),
-                              child: Text("Yok",
-                                style:TextStyle(color: Colors.red) ,
+                              child: Consumer<FireBringer?>(
+                                builder: (context, objectIndex, child) {
+                                  if(objectIndex?.cropLastKnownStatus == 0){
+                                    return const Text("Mahsul yok",
+                                      style:TextStyle(color: Colors.red) ,
+                                    );
+                                  }
+                                  if(objectIndex?.cropLastKnownStatus == 1){
+                                    return const Text("Mahsul toplanmaya hazir !",
+                                      style:TextStyle(color: Colors.green) ,
+                                    );
+                                  }
+                                  else {
+                                    return const Text("Yukleniyor...",
+                                      style:TextStyle(color: Colors.yellow) ,
+                                    );
+                                  }
+                                }
+
                               ),
                             ),
 
@@ -163,7 +182,7 @@ class _HomeBarState extends State<HomeBar> {
                 child: InkWell(
                   borderRadius: BorderRadius.circular(16),
                   onTap: (){
-                    print("123");
+                    print("LIGHT");
                     Navigator.push(context,MaterialPageRoute(builder: (context)=> const LightPage(),));
                     },
 
@@ -239,61 +258,68 @@ class _HomeBarState extends State<HomeBar> {
                 shape:RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                 ) ,
-                child: SizedBox(
-                  height: screenHeight/7,
-                  child: Row(
-                    children: <Widget>[
-                      const Padding(
-                        padding: EdgeInsets.only(left: 18.0,right: 18),
-                        child: Center(
-                            child: Icon(
-                              Icons.water_drop,
-                              size: 28.0, //default:24
-                              color: Colors.grey,
-                            )
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(16),
+                  onTap: (){
+                    print("WATER");
+                    Navigator.push(context,MaterialPageRoute(builder: (context)=> const WaterPage(),));
+                  },
+                  child: SizedBox(
+                    height: screenHeight/7,
+                    child: Row(
+                      children: <Widget>[
+                        const Padding(
+                          padding: EdgeInsets.only(left: 18.0,right: 18),
+                          child: Center(
+                              child: Icon(
+                                Icons.water_drop,
+                                size: 28.0, //default:24
+                                color: Colors.grey,
+                              )
+                          ),
                         ),
-                      ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children:const <Widget>[
-                          Padding(
-                            padding: EdgeInsets.only(bottom: 2.0),
-                            child: Text("Sulama durumu",
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  color: Colors.black
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children:const <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(bottom: 2.0),
+                              child: Text("Sulama durumu",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.black
+                                ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 2.0),
-                            child: Text("Damla sulama kapalı",
-                              style:TextStyle(color: Colors.grey) ,
+                            Padding(
+                              padding: EdgeInsets.only(top: 2.0),
+                              child: Text("Damla sulama kapalı",
+                                style:TextStyle(color: Colors.grey) ,
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                      const Spacer(),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 18.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CupertinoSwitch(
-                                value: _switchValue,
-                                onChanged: (bool? value) {
-                                  setState(() {
-                                    _switchValue = value ?? false;
-                                  });
-                                }),
-                            Text("Auto")
                           ],
                         ),
-                      ),
+                        const Spacer(),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 18.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CupertinoSwitch(
+                                  value: _switchValue,
+                                  onChanged: (bool? value) {
+                                    setState(() {
+                                      _switchValue = value ?? false;
+                                    });
+                                  }),
+                              Text("Auto")
+                            ],
+                          ),
+                        ),
 
 
-                    ],),
+                      ],),
+                  ),
                 ),
               ),
             ),
@@ -307,62 +333,69 @@ class _HomeBarState extends State<HomeBar> {
                 shape:RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                 ) ,
-                child: SizedBox(
-                  height: screenHeight/7,
-                  child: Row(
-                    children: <Widget>[
-                      const Padding(
-                        padding: EdgeInsets.only(left: 18.0,right: 18),
-                        child: Center(
-                            child: Icon(
-                              Icons.thermostat,
-                              size: 28.0, //default:24
-                              color: Colors.grey,
-                            )
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(16),
+                  onTap: (){
+                    print("TEMP");
+                    Navigator.push(context,MaterialPageRoute(builder: (context)=> const TempPage(),));
+                  },
+                  child: SizedBox(
+                    height: screenHeight/7,
+                    child: Row(
+                      children: <Widget>[
+                        const Padding(
+                          padding: EdgeInsets.only(left: 18.0,right: 18),
+                          child: Center(
+                              child: Icon(
+                                Icons.thermostat,
+                                size: 28.0, //default:24
+                                color: Colors.grey,
+                              )
+                          ),
                         ),
-                      ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children:const <Widget>[
-                          Padding(
-                            padding: EdgeInsets.only(bottom: 2.0),
-                            child: Text("Sıcaklık durumu",
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  color: Colors.black
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children:const <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(bottom: 2.0),
+                              child: Text("Sıcaklık durumu",
+                                style: TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.black
+                                ),
                               ),
                             ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 2.0),
-                            child: Text("Sıcaklık: 28°C",
-                              style:TextStyle(color: Colors.grey) ,
+                            Padding(
+                              padding: EdgeInsets.only(top: 2.0),
+                              child: Text("Sıcaklık: 28°C",
+                                style:TextStyle(color: Colors.grey) ,
+                              ),
                             ),
-                          ),
 
-                        ],
-                      ),
-                      const Spacer(),
-                      Padding(
-                        padding: const EdgeInsets.only(right: 18.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CupertinoSwitch(
-                                value: _switchValue,
-                                onChanged: (bool? value) {
-                                  setState(() {
-                                    _switchValue = value ?? false;
-                                  });
-                                }),
-                            Text("Auto")
                           ],
                         ),
-                      ),
+                        const Spacer(),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 18.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CupertinoSwitch(
+                                  value: _switchValue,
+                                  onChanged: (bool? value) {
+                                    setState(() {
+                                      _switchValue = value ?? false;
+                                    });
+                                  }),
+                              Text("Auto")
+                            ],
+                          ),
+                        ),
 
 
-                    ],),
+                      ],),
+                  ),
                 ),
               ),
             ),

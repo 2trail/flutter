@@ -25,6 +25,9 @@ class FireBringer extends ChangeNotifier {
   List<double> moisture=[];
   List<double> temperature=[];
   List<double> voltage=[];
+  int cropLastKnownStatus = 2;
+
+
 
   void cleanAll(){
     if(date.isNotEmpty){
@@ -46,11 +49,19 @@ class FireBringer extends ChangeNotifier {
       isFireOn = true;
       fireTest.onValue.listen((event) {
 
-        Map<dynamic, dynamic> gelenDegerler= event.snapshot.value as Map;
-      
+
+        Map<dynamic, dynamic> gelenDegerlersnap= event.snapshot.value as Map;
+
+
+        var gelenDegerler = Map.fromEntries(
+            gelenDegerlersnap.entries.toList()..sort((e1, e2) => e1.key.compareTo(e2.key)));
+        //todo: bu kod verimsiz calistigini dusunmekteim.
+        // Firebase zaten sirali bir bicimde verileri gonderebilme kapasitesine sahiptir.
+        // Bunun icin "event.snapshot.children.elementAt(0).key"  ve
+        // " event.snapshot.children.elementAt(0).value as Map" kullanilarak listeleme yapilmalidir
+
         if(gelenDegerler != null){
           fireCounter= 0;
-
           gelenDegerler.forEach((key,nesne){
             var gelenDeger = DataBaseClass.fromJson(nesne);
 
@@ -69,6 +80,7 @@ class FireBringer extends ChangeNotifier {
             print("voltage: ${gelenDeger.voltage}");
 
             date.add(key);
+            crop.add(gelenDeger.crop);
             lux.add(gelenDeger.lux);
             moisture.add(gelenDeger.moisture);
             temperature.add(gelenDeger.temperature);
@@ -77,6 +89,15 @@ class FireBringer extends ChangeNotifier {
           });
 
         }
+
+        print("----------------------------");
+        print("snapshot.children: ${event.snapshot.children.elementAt(0).key}");
+        print("snapshot.children.elementAt(0): ${event.snapshot.children.elementAt(0).value as Map}");
+        print("----------------------------");
+
+
+
+        cropLastKnownStatus=crop.last;
         notifyListeners();
       });
 
@@ -98,7 +119,7 @@ class FireBringer extends ChangeNotifier {
     fireTest.push().set(veriler);
   }
 
-  List<FlSpot> returnFlSpots(){
+  List<FlSpot> returnFlSpots(){//for light data point
     List<FlSpot> listOfSpots =[];
     for(int i = 0; i<fireCounter ;i++){
       listOfSpots.add(FlSpot(i.toDouble(), lux[i]));
@@ -108,6 +129,30 @@ class FireBringer extends ChangeNotifier {
     print(fireCounter);
     return listOfSpots;
   }
+
+  List<FlSpot> returnFlSpots4Temp(){//for temp data point
+    List<FlSpot> listOfSpots =[];
+    for(int i = 0; i<fireCounter ;i++){
+      listOfSpots.add(FlSpot(i.toDouble(), temperature[i]));
+    }
+    print("------------------------------------------------------");
+    print(listOfSpots.length);
+    print(fireCounter);
+    return listOfSpots;
+  }
+
+  List<FlSpot> returnFlSpots4Water(){//for light data point
+    List<FlSpot> listOfSpots =[];
+    for(int i = 0; i<fireCounter ;i++){
+      listOfSpots.add(FlSpot(i.toDouble(), moisture[i]));
+    }
+    print("------------------------------------------------------");
+    print(listOfSpots.length);
+    print(fireCounter);
+    return listOfSpots;
+  }
+
+
 
 }
 

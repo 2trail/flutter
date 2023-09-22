@@ -6,12 +6,12 @@ import 'package:provider/provider.dart';
 
 import '../../firebase/fireBringer.dart';
 
-class LineChartWidget extends StatefulWidget{
+class FiexedLineChartWidget4Temp extends StatefulWidget{
   @override
-  State<LineChartWidget> createState() => _LineChartWidgetState();
+  State<FiexedLineChartWidget4Temp> createState() => _FiexedLineChartWidget4TempState();
 }
 
-class _LineChartWidgetState extends State<LineChartWidget> {
+class _FiexedLineChartWidget4TempState extends State<FiexedLineChartWidget4Temp> {
   final List<Color> gradientColors = [
     const Color(0xff23b6e6),
     const Color(0xff02d39a),
@@ -35,8 +35,8 @@ class _LineChartWidgetState extends State<LineChartWidget> {
             listOfKeys[3]=objectIndex.date[(counter*11)~/12];
             return objectIndex?.fireCounter.toDouble();
           }()),
-          minY: objectIndex!.lux.reduce(min)-10,
-          maxY: objectIndex!.lux.reduce(max)+10,
+          minY: objectIndex!.temperature.reduce(min)-10,
+          maxY: objectIndex!.temperature.reduce(max)+10,
           gridData: FlGridData(
             show: true,
             //drawVerticalLine: true,
@@ -91,7 +91,7 @@ class _LineChartWidgetState extends State<LineChartWidget> {
           ),
           lineBarsData: [
             LineChartBarData(
-              spots: objectIndex?.returnFlSpots(),
+              spots: objectIndex?.returnFlSpots4Temp(),
               isCurved: true,
               gradient: LinearGradient(
                 colors: gradientColors

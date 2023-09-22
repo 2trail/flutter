@@ -1,0 +1,704 @@
+{
+  "veriler": {
+    "2023-06-15 09:47:16": {
+      "crop": 0,
+      "lux": 449.52,
+      "moisture": 92.45,
+      "temperature": 23.81,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:47:24": {
+      "crop": 0,
+      "lux": 444.66,
+      "moisture": 92.45,
+      "temperature": 23.88,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:47:33": {
+      "crop": 0,
+      "lux": 447.57,
+      "moisture": 92.44,
+      "temperature": 23.88,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:47:39": {
+      "crop": 0,
+      "lux": 397.19,
+      "moisture": 92.45,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:47:45": {
+      "crop": 0,
+      "lux": 411.89,
+      "moisture": 92.45,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:47:50": {
+      "crop": 0,
+      "lux": 410.02,
+      "moisture": 92.49,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:47:56": {
+      "crop": 1,
+      "lux": 364.33,
+      "moisture": 92.44,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:48:00": {
+      "crop": 0,
+      "lux": 366.83,
+      "moisture": 92.45,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:48:06": {
+      "crop": 0,
+      "lux": 369.6,
+      "moisture": 92.45,
+      "temperature": 23.88,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:48:11": {
+      "crop": 1,
+      "lux": 424.32,
+      "moisture": 92.45,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:48:16": {
+      "crop": 1,
+      "lux": 431.49,
+      "moisture": 92.44,
+      "temperature": 23.88,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:48:23": {
+      "crop": 0,
+      "lux": 341.05,
+      "moisture": 92.45,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:48:28": {
+      "crop": 0,
+      "lux": 339.08,
+      "moisture": 92.46,
+      "temperature": 24,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:48:38": {
+      "crop": 0,
+      "lux": 262.41,
+      "moisture": 92.53,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:48:44": {
+      "crop": 0,
+      "lux": 233.5,
+      "moisture": 92.45,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:48:51": {
+      "crop": 0,
+      "lux": 211.83,
+      "moisture": 92.47,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:48:56": {
+      "crop": 0,
+      "lux": 219.64,
+      "moisture": 92.46,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:49:01": {
+      "crop": 1,
+      "lux": 280.09,
+      "moisture": 92.46,
+      "temperature": 24,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:49:07": {
+      "crop": 1,
+      "lux": 264.16,
+      "moisture": 92.46,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:49:12": {
+      "crop": 0,
+      "lux": 232.53,
+      "moisture": 92.46,
+      "temperature": 24,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:49:17": {
+      "crop": 1,
+      "lux": 273.2,
+      "moisture": 92.47,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:49:22": {
+      "crop": 0,
+      "lux": 279.59,
+      "moisture": 92.47,
+      "temperature": 24,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:49:27": {
+      "crop": 0,
+      "lux": 225.41,
+      "moisture": 92.49,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:49:33": {
+      "crop": 1,
+      "lux": 211.96,
+      "moisture": 92.49,
+      "temperature": 24,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:49:38": {
+      "crop": 1,
+      "lux": 235.08,
+      "moisture": 92.47,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:49:43": {
+      "crop": 1,
+      "lux": 257.26,
+      "moisture": 92.46,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:49:49": {
+      "crop": 0,
+      "lux": 247.55,
+      "moisture": 92.46,
+      "temperature": 23.94,
+      "voltage": 1.09
+    },
+    "2023-06-15 09:49:54": {
+      "crop": 0,
+      "lux": 268.2,
+      "moisture": 92.46,
+      "temperature": 24,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:14:40": {
+      "crop": 0,
+      "lux": 265.07,
+      "moisture": 92.51,
+      "temperature": 24.38,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:14:46": {
+      "crop": 0,
+      "lux": 278.87,
+      "moisture": 92.51,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:14:51": {
+      "crop": 0,
+      "lux": 275.17,
+      "moisture": 92.51,
+      "temperature": 24.44,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:14:56": {
+      "crop": 0,
+      "lux": 277.49,
+      "moisture": 92.5,
+      "temperature": 24.44,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:15:01": {
+      "crop": 0,
+      "lux": 287.18,
+      "moisture": 92.59,
+      "temperature": 24.44,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:15:06": {
+      "crop": 1,
+      "lux": 287.31,
+      "moisture": 92.53,
+      "temperature": 24.44,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:15:11": {
+      "crop": 1,
+      "lux": 270.79,
+      "moisture": 92.54,
+      "temperature": 24.44,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:15:16": {
+      "crop": 1,
+      "lux": 275.13,
+      "moisture": 92.53,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:15:21": {
+      "crop": 1,
+      "lux": 273.95,
+      "moisture": 92.53,
+      "temperature": 24.44,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:15:26": {
+      "crop": 1,
+      "lux": 275.04,
+      "moisture": 92.53,
+      "temperature": 24.44,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:15:31": {
+      "crop": 1,
+      "lux": 270.12,
+      "moisture": 92.53,
+      "temperature": 24.44,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:15:36": {
+      "crop": 1,
+      "lux": 275.34,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:15:41": {
+      "crop": 1,
+      "lux": 271.8,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:15:46": {
+      "crop": 1,
+      "lux": 268.01,
+      "moisture": 92.53,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:15:51": {
+      "crop": 1,
+      "lux": 265.02,
+      "moisture": 92.52,
+      "temperature": 24.44,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:15:56": {
+      "crop": 1,
+      "lux": 274.1,
+      "moisture": 92.53,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:16:01": {
+      "crop": 1,
+      "lux": 272.97,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:16:06": {
+      "crop": 1,
+      "lux": 271.13,
+      "moisture": 92.53,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:16:11": {
+      "crop": 1,
+      "lux": 266.83,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:16:16": {
+      "crop": 1,
+      "lux": 266.47,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:16:21": {
+      "crop": 1,
+      "lux": 282.04,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:16:25": {
+      "crop": 0,
+      "lux": 260.01,
+      "moisture": 92.59,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:16:30": {
+      "crop": 0,
+      "lux": 263.29,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:16:35": {
+      "crop": 0,
+      "lux": 274.35,
+      "moisture": 92.52,
+      "temperature": 24.44,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:16:40": {
+      "crop": 0,
+      "lux": 268.57,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:16:45": {
+      "crop": 0,
+      "lux": 275.85,
+      "moisture": 92.51,
+      "temperature": 24.44,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:16:50": {
+      "crop": 0,
+      "lux": 260.41,
+      "moisture": 92.52,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:16:55": {
+      "crop": 0,
+      "lux": 240.48,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:00": {
+      "crop": 0,
+      "lux": 278.49,
+      "moisture": 92.51,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:05": {
+      "crop": 0,
+      "lux": 294.85,
+      "moisture": 92.51,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:09": {
+      "crop": 0,
+      "lux": 236.26,
+      "moisture": 92.53,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:14": {
+      "crop": 0,
+      "lux": 200.62,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:19": {
+      "crop": 0,
+      "lux": 223.15,
+      "moisture": 92.53,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:24": {
+      "crop": 0,
+      "lux": 289.18,
+      "moisture": 92.53,
+      "temperature": 24.44,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:29": {
+      "crop": 0,
+      "lux": 298.02,
+      "moisture": 92.53,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:34": {
+      "crop": 0,
+      "lux": 287.55,
+      "moisture": 92.54,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:39": {
+      "crop": 0,
+      "lux": 289.72,
+      "moisture": 92.5,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:44": {
+      "crop": 0,
+      "lux": 292.07,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:48": {
+      "crop": 0,
+      "lux": 295.04,
+      "moisture": 92.54,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:53": {
+      "crop": 0,
+      "lux": 294.94,
+      "moisture": 92.53,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:17:58": {
+      "crop": 0,
+      "lux": 294.19,
+      "moisture": 92.53,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:18:03": {
+      "crop": 0,
+      "lux": 293.2,
+      "moisture": 92.53,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:18:08": {
+      "crop": 0,
+      "lux": 291.66,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:18:13": {
+      "crop": 0,
+      "lux": 290.45,
+      "moisture": 92.53,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:18:17": {
+      "crop": 0,
+      "lux": 293.36,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:18:22": {
+      "crop": 0,
+      "lux": 290.54,
+      "moisture": 92.52,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:18:27": {
+      "crop": 0,
+      "lux": 290.39,
+      "moisture": 92.53,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:18:32": {
+      "crop": 0,
+      "lux": 289.31,
+      "moisture": 92.52,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:18:37": {
+      "crop": 0,
+      "lux": 289.54,
+      "moisture": 92.53,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:18:42": {
+      "crop": 0,
+      "lux": 287.76,
+      "moisture": 92.52,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:18:46": {
+      "crop": 0,
+      "lux": 289.95,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:18:51": {
+      "crop": 0,
+      "lux": 289.05,
+      "moisture": 92.53,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:18:56": {
+      "crop": 0,
+      "lux": 289.77,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:01": {
+      "crop": 0,
+      "lux": 288.78,
+      "moisture": 92.52,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:06": {
+      "crop": 0,
+      "lux": 290.5,
+      "moisture": 92.53,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:11": {
+      "crop": 0,
+      "lux": 290.51,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:16": {
+      "crop": 0,
+      "lux": 288.94,
+      "moisture": 92.52,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:20": {
+      "crop": 0,
+      "lux": 289,
+      "moisture": 92.53,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:25": {
+      "crop": 0,
+      "lux": 286.06,
+      "moisture": 92.52,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:30": {
+      "crop": 0,
+      "lux": 287.23,
+      "moisture": 92.53,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:35": {
+      "crop": 0,
+      "lux": 291.08,
+      "moisture": 92.52,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:40": {
+      "crop": 0,
+      "lux": 292.42,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:45": {
+      "crop": 0,
+      "lux": 291.69,
+      "moisture": 92.52,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:50": {
+      "crop": 0,
+      "lux": 291.42,
+      "moisture": 92.51,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:54": {
+      "crop": 0,
+      "lux": 293.11,
+      "moisture": 92.53,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:19:59": {
+      "crop": 0,
+      "lux": 291.27,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:20:04": {
+      "crop": 0,
+      "lux": 286.71,
+      "moisture": 92.52,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:20:09": {
+      "crop": 0,
+      "lux": 293.59,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:20:14": {
+      "crop": 0,
+      "lux": 292.26,
+      "moisture": 92.52,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:20:20": {
+      "crop": 0,
+      "lux": 297.29,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:20:25": {
+      "crop": 0,
+      "lux": 257.04,
+      "moisture": 92.52,
+      "temperature": 24.56,
+      "voltage": 1.09
+    },
+    "2023-06-15 10:20:35": {
+      "crop": 0,
+      "lux": 226.82,
+      "moisture": 92.52,
+      "temperature": 24.5,
+      "voltage": 1.09
+    }
+  }
+}
