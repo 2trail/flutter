@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "826146812248",
+    "firebase_url": "https://bitirmeje-default-rtdb.firebaseio.com",
+    "project_id": "bitirmeje",
+    "storage_bucket": "bitirmeje.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826146812248:android:cbf2fd0e5041981ac2352d",
+        "android_client_info": {
+          "package_name": "com.example.SmartFarming"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826146812248-n2e54pn88jo2dgdd23geskp61p1mtvm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUcHCp0uHDa5_37Ac7xqXRjlrdEzyEzIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826146812248-n2e54pn88jo2dgdd23geskp61p1mtvm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
